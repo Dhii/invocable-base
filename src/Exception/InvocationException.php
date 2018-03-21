@@ -7,6 +7,7 @@ use Dhii\I18n\StringTranslatingTrait;
 use Dhii\Invocation\ArgsAwareTrait;
 use Dhii\Invocation\CallbackAwareTrait;
 use Dhii\Util\Normalization\NormalizeIntCapableTrait;
+use Dhii\Util\Normalization\NormalizeIterableCapableTrait;
 use Dhii\Util\Normalization\NormalizeStringCapableTrait;
 use Dhii\Util\String\StringableInterface as Stringable;
 use Exception as RootException;
@@ -47,6 +48,13 @@ class InvocationException extends RootException implements InvocationExceptionIn
      * @since [*next-version*]
      */
     use NormalizeIntCapableTrait;
+
+    /*
+     * Provides iterable normalization functionality.
+     *
+     * @since [*next-version*]
+     */
+    use NormalizeIterableCapableTrait;
 
     /*
      * Provides string translating capabilities.
