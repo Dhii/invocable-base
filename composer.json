@@ -14,7 +14,7 @@
     "require": {
         "php": "^5.4 | ^7.0",
         "dhii/invocable-interface": "^0.1",
-        "dhii/callback-aware-trait": "dev-task/2_change-to-callback-abstract",
+        "dhii/callback-abstract": "0.1-alpha2",
         "dhii/normalization-helper-base": "^0.1",
         "dhii/exception-helper-base": "^0.1",
         "dhii/i18n-helper-base": "^0.1"
@@ -34,11 +34,5 @@
     "scripts": {
         "test": "phpunit",
         "csfix": "php-cs-fixer fix -vvv"
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/Dhii/callback-abstract.git"
-        }
-    ]
+    }
 }
