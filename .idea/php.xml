@@ -43,7 +43,6 @@
       <path value="$PROJECT_DIR$/vendor/dhii/invocable-interface" />
       <path value="$PROJECT_DIR$/vendor/dhii/i18n-helper-base" />
       <path value="$PROJECT_DIR$/vendor/dhii/exception" />
-      <path value="$PROJECT_DIR$/vendor/dhii/exception-helper-base" />
       <path value="$PROJECT_DIR$/vendor/dhii/i18n-interface" />
       <path value="$PROJECT_DIR$/vendor/dhii/callback-abstract" />
     </include_path>
