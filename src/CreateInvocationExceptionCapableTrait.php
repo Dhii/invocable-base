@@ -1,7 +1,9 @@
 <?php
 
-namespace Dhii\Invocation\Exception;
+namespace Dhii\Invocation;
 
+use Dhii\Invocation\Exception\InvocationException;
+use Dhii\Invocation\Exception\InvocationExceptionInterface;
 use Dhii\Util\String\StringableInterface as Stringable;
 use Exception as RootException;
 use Traversable;

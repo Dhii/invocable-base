@@ -2,7 +2,7 @@
 
 namespace Dhii\Invocation\FuncTest;
 
-use Dhii\Invocation\Exception\CreateInvocationExceptionCapableTrait as TestSubject;
+use Dhii\Invocation\CreateInvocationExceptionCapableTrait as TestSubject;
 use Exception;
 use Exception as RootException;
 use PHPUnit_Framework_MockObject_MockObject as MockObject;
@@ -20,7 +20,7 @@ class CreateInvocationExceptionCapableTraitTest extends TestCase
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Invocation\Exception\CreateInvocationExceptionCapableTrait';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Invocation\CreateInvocationExceptionCapableTrait';
 
     /**
      * Creates a new instance of the test subject.
