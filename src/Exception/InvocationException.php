@@ -21,6 +21,8 @@ class InvocationException extends RootException implements InvocationExceptionIn
 {
     /*
      * Provides awareness of, and storage functionality for, a callable.
+     *
+     * @since [*next-version*]
      */
     use CallbackAwareTrait {
         _getCallback as public getCallable;
