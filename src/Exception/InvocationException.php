@@ -2,6 +2,7 @@
 
 namespace Dhii\Invocation\Exception;
 
+use Dhii\Exception\AbstractBaseException;
 use Dhii\Exception\CreateInvalidArgumentExceptionCapableTrait;
 use Dhii\I18n\StringTranslatingTrait;
 use Dhii\Invocation\ArgsAwareTrait;
@@ -17,7 +18,7 @@ use Exception as RootException;
  *
  * @since [*next-version*]
  */
-class InvocationException extends RootException implements InvocationExceptionInterface
+class InvocationException extends AbstractBaseException implements InvocationExceptionInterface
 {
     /*
      * Provides awareness of, and storage functionality for, a callable.
@@ -90,19 +91,11 @@ class InvocationException extends RootException implements InvocationExceptionIn
         callable $callable = null,
         $args = null
     ) {
-        $message = ($message === null)
-            ? ''
-            : $this->_normalizeString($message);
-
-        $code = ($code === null)
-            ? 0
-            : $this->_normalizeInt($code);
-
         $args = ($args === null)
             ? []
             : $args;
 
-        parent::__construct($message, $code, $previous);
+        $this->_initBaseException($message, $code, $previous);
 
         $this->_setCallback($callable);
         $this->_setArgs($args);
